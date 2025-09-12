@@ -32,7 +32,7 @@ public class RequestHandler implements HttpHandler {
         try {
             Object[] args = argumentResolver.resolveArguments(route, method + ":" + path);
             Object result = methodInvoker.invoke(route, args);
-            String response = (result != null) ? result.toString() : "No Content";
+            String response = (result != null) ? result.toString() : HttpErrorCode.NO_CONTENT.toString();
             responseSender.sendSuccess(exchange, response);
         } catch (Exception e) {
             Throwable cause = (e.getCause() != null) ? e.getCause() : e;
