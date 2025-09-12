@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CustomSpringFramework:jar">
+    <output-path>$PROJECT_DIR$/../JarOut/</output-path>
+    <root id="archive" name="CustomSpringFramework.jar">
+      <element id="module-output" name="CustomSpringFramework" />
+      <element id="library" level="module" name="CustomSpringFramework" module-name="CustomSpringFramework" />
+    </root>
+  </artifact>
+</component>
