@@ -9,19 +9,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb8e2410-f31d-4d95-8ccf-2a89dc5e2385" name="Changes" comment="" />
+    <list default="true" id="fb8e2410-f31d-4d95-8ccf-2a89dc5e2385" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/CustomSpringFramework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CustomSpringFramework_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/customspringframework/boot/ApplicationBootstrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/customspringframework/boot/ApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/customspringframework/boot/ApplicationContextInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/customspringframework/boot/ApplicationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/customspringframework/boot/initializer/BasePackageResolverInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/customspringframework/boot/runner/RouteInitializerRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/customspringframework/boot/runner/ServerRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/customspringframework/boot/CustomSpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/customspringframework/boot/CustomSpringApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="true" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <branch-grouping />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -37,7 +60,10 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Ashutosh/Programming/Java/CustomSpringFramework/src",
     "node.js.detected.package.eslint": "true",
@@ -46,10 +72,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/Ashutosh/Programming/Java/CustomSpringFramework/src/Main.java",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "vcs.log",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,6 +107,9 @@
       </set>
     </attachedChunks>
   </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Ashutosh\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fb8e2410-f31d-4d95-8ccf-2a89dc5e2385" name="Changes" comment="" />
@@ -92,10 +121,44 @@
       <workItem from="1757434904901" duration="7551000" />
       <workItem from="1757512021562" duration="1975000" />
       <workItem from="1757521747453" duration="586000" />
+      <workItem from="1757526204795" duration="301000" />
+      <workItem from="1757596646913" duration="11003000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
