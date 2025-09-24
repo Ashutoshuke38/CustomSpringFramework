@@ -1,13 +1,12 @@
 package org.customspringframework.Server.Handler;
 
+import org.customspringframework.Core.Coverter.httpMessageConvertor.HttpMessageConverterFactory;
 import org.customspringframework.Routing.Route;
 import org.customspringframework.Server.Errors.HttpErrorCode;
-import org.customspringframework.Server.Handler.impl.DefaultResponseSender;
-import org.customspringframework.Server.Handler.impl.DefaultRouteResolver;
-import org.customspringframework.Server.Handler.impl.PathVariableArgumentResolver;
-import org.customspringframework.Server.Handler.impl.ReflectiveMethodInvoker;
+import org.customspringframework.Server.Handler.impl.*;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
+import org.customspringframework.annotation.*;
 
 import java.io.IOException;
 
@@ -17,6 +16,8 @@ public class RequestHandler implements HttpHandler {
     private final ArgumentResolver argumentResolver = new PathVariableArgumentResolver();
     private final MethodInvoker methodInvoker = new ReflectiveMethodInvoker();
     private final ResponseSender responseSender = new DefaultResponseSender();
+    private final HttpMessageConverterFactory httpMessageConverterFactory = new HttpMessageConverterFactory();
+
 
     @Override
     public void handle(HttpExchange exchange) throws IOException {
@@ -32,7 +33,16 @@ public class RequestHandler implements HttpHandler {
         try {
             Object[] args = argumentResolver.resolveArguments(route, method + ":" + path);
             Object result = methodInvoker.invoke(route, args);
-            String response = (result != null) ? result.toString() : "No Content";
+
+            // this code will return the serialized data , ex json, xml, etx.
+            if(!route.getMethod().isAnnotationPresent(RequestMapping.class))
+            {
+                String produces = MappingAttributeResolver.resolveProduces(route.getMappingAnnotation());
+                result = httpMessageConverterFactory.getConverters().get(produces).convert(result);
+            }
+            // this code will return the view                - need to implement it.
+
+            String response = (result != null) ? result.toString() : HttpErrorCode.NO_CONTENT.toString();
             responseSender.sendSuccess(exchange, response);
         } catch (Exception e) {
             Throwable cause = (e.getCause() != null) ? e.getCause() : e;
