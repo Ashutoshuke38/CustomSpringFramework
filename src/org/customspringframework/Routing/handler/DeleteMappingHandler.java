@@ -15,7 +15,7 @@ public class DeleteMappingHandler implements MappingHandler {
     @Override
     public void registerRoute(Method method, String controllerPath, RouteRegistry registry) {
         DeleteMapping mapping = method.getAnnotation(DeleteMapping.class);
-        registry.register("POST", controllerPath, mapping.value(), method);
+        registry.register("POST", controllerPath, mapping.value(), method, mapping);
     }
 }
 

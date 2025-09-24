@@ -15,7 +15,7 @@ public class GetMappingHandler implements MappingHandler {
     @Override
     public void registerRoute(Method method, String controllerPath, RouteRegistry registry) {
         GetMapping mapping = method.getAnnotation(GetMapping.class);
-        registry.register("GET", controllerPath, mapping.value(), method);
+        registry.register("GET", controllerPath, mapping.value(), method,mapping);
     }
 }
 

@@ -15,7 +15,7 @@ public class PutMappingHandler implements MappingHandler {
     @Override
     public void registerRoute(Method method, String controllerPath, RouteRegistry registry) {
         PutMapping mapping = method.getAnnotation(PutMapping.class);
-        registry.register("POST", controllerPath, mapping.value(), method);
+        registry.register("POST", controllerPath, mapping.value(), method, mapping);
     }
 }
 

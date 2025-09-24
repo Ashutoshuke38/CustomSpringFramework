@@ -15,7 +15,7 @@ public class PostMappingHandler implements MappingHandler {
     @Override
     public void registerRoute(Method method, String controllerPath, RouteRegistry registry) {
         PostMapping mapping = method.getAnnotation(PostMapping.class);
-        registry.register("POST", controllerPath, mapping.value(), method);
+        registry.register("POST", controllerPath, mapping.value(), method, mapping);
     }
 }
 
