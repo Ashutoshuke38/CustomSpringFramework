@@ -2,7 +2,7 @@ package org.customspringframework.boot.runners;
 
 import org.customspringframework.boot.ApplicationContext;
 import org.customspringframework.boot.ApplicationRunner;
-import org.customspringframework.Core.RouteInitializer;
+import org.customspringframework.Routing.RouteInitializer;
 import org.customspringframework.Routing.RouteRegistry;
 import org.customspringframework.Routing.RouteRegistryHolder;
 
