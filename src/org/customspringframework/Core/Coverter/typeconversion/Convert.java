@@ -1,4 +1,4 @@
-package org.customspringframework.Core.Coverter;
+package org.customspringframework.Core.Coverter.typeconversion;
 
 public interface Convert<T> {
 
