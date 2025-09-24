@@ -3,7 +3,9 @@
     <output-path>$PROJECT_DIR$/../JarOut/</output-path>
     <root id="archive" name="CustomSpringFramework.jar">
       <element id="module-output" name="CustomSpringFramework" />
-      <element id="library" level="module" name="CustomSpringFramework" module-name="CustomSpringFramework" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../ThirdParty/jackson-annotations-2.17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../ThirdParty/jackson-core-2.17.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../ThirdParty/jackson-databind-2.17.2.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
