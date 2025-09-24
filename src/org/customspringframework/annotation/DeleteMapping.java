@@ -1,5 +1,7 @@
 package org.customspringframework.annotation;
 
+import org.customspringframework.http.MediaType;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -10,5 +12,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)         // Can be applied to methods
 public @interface DeleteMapping {
     String value();                 // Annotation element
+    String produces() default MediaType.APPLICATION_JSON;
 }
 
